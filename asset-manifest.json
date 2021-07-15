@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/provaFront/static/css/main.93d4b453.chunk.css",
-    "main.js": "/provaFront/static/js/main.c57fdffa.chunk.js",
-    "main.js.map": "/provaFront/static/js/main.c57fdffa.chunk.js.map",
-    "runtime-main.js": "/provaFront/static/js/runtime-main.6cbe701d.js",
-    "runtime-main.js.map": "/provaFront/static/js/runtime-main.6cbe701d.js.map",
-    "static/js/2.9d9e7969.chunk.js": "/provaFront/static/js/2.9d9e7969.chunk.js",
-    "static/js/2.9d9e7969.chunk.js.map": "/provaFront/static/js/2.9d9e7969.chunk.js.map",
-    "index.html": "/provaFront/index.html",
-    "static/css/main.93d4b453.chunk.css.map": "/provaFront/static/css/main.93d4b453.chunk.css.map",
-    "static/js/2.9d9e7969.chunk.js.LICENSE.txt": "/provaFront/static/js/2.9d9e7969.chunk.js.LICENSE.txt"
+    "main.css": "/provaFront/provafront/static/css/main.93d4b453.chunk.css",
+    "main.js": "/provaFront/provafront/static/js/main.c57fdffa.chunk.js",
+    "main.js.map": "/provaFront/provafront/static/js/main.c57fdffa.chunk.js.map",
+    "runtime-main.js": "/provaFront/provafront/static/js/runtime-main.ce5940db.js",
+    "runtime-main.js.map": "/provaFront/provafront/static/js/runtime-main.ce5940db.js.map",
+    "static/js/2.db18995c.chunk.js": "/provaFront/provafront/static/js/2.db18995c.chunk.js",
+    "static/js/2.db18995c.chunk.js.map": "/provaFront/provafront/static/js/2.db18995c.chunk.js.map",
+    "index.html": "/provaFront/provafront/index.html",
+    "static/css/main.93d4b453.chunk.css.map": "/provaFront/provafront/static/css/main.93d4b453.chunk.css.map",
+    "static/js/2.db18995c.chunk.js.LICENSE.txt": "/provaFront/provafront/static/js/2.db18995c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6cbe701d.js",
-    "static/js/2.9d9e7969.chunk.js",
+    "static/js/runtime-main.ce5940db.js",
+    "static/js/2.db18995c.chunk.js",
     "static/css/main.93d4b453.chunk.css",
     "static/js/main.c57fdffa.chunk.js"
   ]
