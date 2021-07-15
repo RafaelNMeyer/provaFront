@@ -17,7 +17,6 @@ const CheckboxCustom = withStyles({
 
 // object destructuring
 export default function FilterOption({name, checkedInit, setCheckedInit}){
-
     function handleChange(){
         if(checkedInit.includes(name)){
           setCheckedInit(checkedInit.filter(item => item !== name))
