@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/provaFront/static/css/main.93d4b453.chunk.css",
+    "main.js": "/provaFront/static/js/main.c57fdffa.chunk.js",
+    "main.js.map": "/provaFront/static/js/main.c57fdffa.chunk.js.map",
+    "runtime-main.js": "/provaFront/static/js/runtime-main.6cbe701d.js",
+    "runtime-main.js.map": "/provaFront/static/js/runtime-main.6cbe701d.js.map",
+    "static/js/2.9d9e7969.chunk.js": "/provaFront/static/js/2.9d9e7969.chunk.js",
+    "static/js/2.9d9e7969.chunk.js.map": "/provaFront/static/js/2.9d9e7969.chunk.js.map",
+    "index.html": "/provaFront/index.html",
+    "static/css/main.93d4b453.chunk.css.map": "/provaFront/static/css/main.93d4b453.chunk.css.map",
+    "static/js/2.9d9e7969.chunk.js.LICENSE.txt": "/provaFront/static/js/2.9d9e7969.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6cbe701d.js",
+    "static/js/2.9d9e7969.chunk.js",
+    "static/css/main.93d4b453.chunk.css",
+    "static/js/main.c57fdffa.chunk.js"
+  ]
+}
