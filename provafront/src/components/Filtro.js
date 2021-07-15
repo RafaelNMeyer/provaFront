@@ -2,8 +2,8 @@ import FilterOption from "./FilterOption";
 import {useState} from "react";
 import styled from "styled-components";
 
-export default function Filtro(){
-    const [checked, setChecked] = useState([
+export default function Filtro({setCheckedInit, checkedInit}){
+    const names =[
         "Status",
         "Venda",
         "Valor",
@@ -15,14 +15,15 @@ export default function Filtro(){
         "ARP",
         "NSU",
         "DATA",
-    ]);
+    ];
 
     return (
         <FilterStyle>
         <p>Filtros</p>
-        {checked.map((check,i)=>(
+        {names.map((name,i)=>(
             //key precisa react saber
-            <FilterOption check={check} key={i} checked={checked}/>
+            <FilterOption name={name} key={i} setCheckedInit={setCheckedInit}
+            checkedInit={checkedInit}/>
         ))}
         </FilterStyle>
     )

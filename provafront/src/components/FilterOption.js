@@ -16,10 +16,14 @@ const CheckboxCustom = withStyles({
   })((props) => <Checkbox color="default" {...props} />);
 
 // object destructuring
-export default function FilterOption({check, checked}){
-    
+export default function FilterOption({name, checkedInit, setCheckedInit}){
+
     function handleChange(){
-        
+        if(checkedInit.includes(name)){
+          setCheckedInit(checkedInit.filter(item => item !== name))
+        }else{
+          setCheckedInit([...checkedInit, name])
+        }
       };
     
     return (
@@ -27,8 +31,8 @@ export default function FilterOption({check, checked}){
             <FormGroup aria-label="position" row>
                 <FormControlLabel
                 value="end"
-                control={<CheckboxCustom />}
-                label={check}
+                control={<CheckboxCustom checked={checkedInit.includes(name)} onChange={handleChange}/>}
+                label={name}
                 labelPlacement="end"
                 />
             </FormGroup>

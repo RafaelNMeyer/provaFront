@@ -5,11 +5,14 @@ import {useState} from "react";
 
 function App() {
   const [showFilter, setShowFilter] = useState(false)
+  const [checkedInit, setCheckedInit] = useState([])
+
   return (
     <Content>
       <div>
+        {console.log(checkedInit)}
         <button onClick={()=>setShowFilter(!showFilter)}>+ Adic. Filtro</button>
-        {showFilter? <Filtro/> : false}
+        {showFilter? <Filtro setCheckedInit={setCheckedInit} checkedInit={checkedInit}/> : false}
       </div>
     </Content>
   );
@@ -31,6 +34,7 @@ position: relative;
   position: absolute;
   & button{
     width: 100%;
+    height: 100%;
     border-style: none;
     margin-bottom: 4px;
     font-weight: bold;
