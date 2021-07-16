@@ -2,7 +2,7 @@ import FilterOption from "./FilterOption";
 import styled from "styled-components";
 import "../index.css"
 
-export default function Filtro({setCheckedInit, checkedInit, c}){
+export default function Filtro({setCheckedInit, checkedInit, hide}){
     const names =[
         "Status",
         "Venda",
@@ -18,7 +18,7 @@ export default function Filtro({setCheckedInit, checkedInit, c}){
     ];
 
     return (
-        <FilterStyle className={c}>
+        <FilterStyle className={hide} style={{maxHeight: hide==="hide"? 0 : "85vh"}}>
         <p>Filtros</p>
         {names.map((name,i)=>(
             //key precisa react saber
@@ -38,7 +38,6 @@ border-radius: 10px;
 padding-left: 20px;
 font-family: Arial, Helvetica, sans-serif;
 color: #4A5E6D;
-max-height: 85vh;
 transition: max-height 0.5s ease-in-out;
 overflow:hidden;
 &>:last-child{
