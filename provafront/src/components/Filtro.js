@@ -1,7 +1,8 @@
 import FilterOption from "./FilterOption";
 import styled from "styled-components";
+import "../index.css"
 
-export default function Filtro({setCheckedInit, checkedInit}){
+export default function Filtro({setCheckedInit, checkedInit, c}){
     const names =[
         "Status",
         "Venda",
@@ -17,7 +18,7 @@ export default function Filtro({setCheckedInit, checkedInit}){
     ];
 
     return (
-        <FilterStyle>
+        <FilterStyle className={c}>
         <p>Filtros</p>
         {names.map((name,i)=>(
             //key precisa react saber
@@ -32,13 +33,21 @@ const FilterStyle = styled.div`
 display: flex;
 flex-direction: column;
 background: white;
-border-radius: 5px;
+box-shadow: 1px 1px 8px #D0D0D0;
+border-radius: 10px;
 padding-left: 20px;
 font-family: Arial, Helvetica, sans-serif;
 color: #4A5E6D;
+max-height: 85vh;
+transition: max-height 0.5s ease-in-out;
+overflow:hidden;
+&>:last-child{
+    padding-bottom: 15px;
+}
 & p{
     padding: 4px;
     padding-top: 15px;
+    padding-bottom: 15px;
     font-weight: bold;
 }
 `

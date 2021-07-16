@@ -6,13 +6,14 @@ import {useState} from "react";
 function App() {
   const [showFilter, setShowFilter] = useState(false)
   const [checkedInit, setCheckedInit] = useState([])
-
+  var c = "";
   return (
     <Content>
       <div>
-        {console.log(checkedInit)}
         <button onClick={()=>setShowFilter(!showFilter)}>+ Adic. Filtro</button>
-        {showFilter? <Filtro setCheckedInit={setCheckedInit} checkedInit={checkedInit}/> : false}
+        {showFilter? <Filtro c={""} setCheckedInit={setCheckedInit} checkedInit={checkedInit}/> 
+        : <Filtro c={"hide"} setCheckedInit={setCheckedInit} checkedInit={checkedInit}/>}
+        
       </div>
     </Content>
   );
@@ -28,11 +29,12 @@ height: 85vh;
 position: relative;
 &>div{
   min-width: 158px;
-  background: #eee;
   padding: 10px 4px 4px 4px;
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 10px 10px;
+  background: #F6F6F6;
   position: absolute;
   & button{
+    background: #F6F6F6;
     width: 100%;
     height: 100%;
     border-style: none;
@@ -40,6 +42,7 @@ position: relative;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     color: #4dd0e1;
+    cursor: pointer;
   }
 }
 `

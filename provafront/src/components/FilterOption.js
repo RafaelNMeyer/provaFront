@@ -31,6 +31,7 @@ export default function FilterOption({name, checkedInit, setCheckedInit}){
                 <FormControlLabel
                 value="end"
                 control={<CheckboxCustom checked={checkedInit.includes(name)} onChange={handleChange}/>}
+                style={{ height: 25, width: 20 }}
                 label={name}
                 labelPlacement="end"
                 />
